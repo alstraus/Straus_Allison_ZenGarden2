@@ -1,0 +1,135 @@
+/*
+
+.width is set for the column width
+
+.column is set to position columns 
+
+example
+
+.width {
+width: 50%;
+}
+
+.column {
+float: left;
+}
+
+*/
+
+.row {
+    content: "";
+    clear: both;
+    display: inline-block;
+}
+
+.column {
+    float: left;
+}
+
+.width {
+    width: 60%;
+}
+
+.one-half {
+    width: 50%;
+}
+
+@font-face {
+    font-family: 'Shorelines Script Bold';
+    src: url(Shorelines_Script_Bold.otf)
+}
+
+@font-face {
+    font-family: 'Moon Flower Bold';
+    src: url(Moon_Flower_Bold.ttf)
+}
+
+@font-face {
+    font-family: 'Moon Flower';
+    src: url(Moon_Flower.ttf)
+}
+
+@font-face {
+    font-family: 'A Little Sunshine';
+    src: url(A_little_sunshine.ttf)
+}
+
+#linkhover a:hover {
+    background-color: lightpink;
+    color: white;
+}
+
+body {
+    font-family: 'A Little Sunshine';
+    color: black;
+    font-size: 20px;
+    margin: 3em;
+}
+
+
+body a:hover {
+    color: #DBE793;
+    text-decoration: none;
+}
+
+body a { 
+    text-decoration: none;
+    color: lightpink;
+}
+
+h1 {
+    font-family: 'Shorelines Script Bold';
+    font-size: 5em;
+    color: lightpink;
+    text-align: center;
+}
+
+.headerbox {
+    width: auto;
+    height: 2em;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: double;
+    border-width: .15em;
+    border-color: black;
+    margin: 1em;
+    padding-top: 1em;
+}
+
+h2 {
+    font-family: 'Moon Flower Bold';
+    font-size: 3em;
+    color: black;
+}
+
+h3 {
+   font-family: 'Moon Flower Bold';
+    font-size: 2em;
+    color: black;
+    border-bottom: double;
+}
+
+@media screen and (min-width: 1000px) {
+    h1 {font-size: 4em;}
+    h2 {font-size: 3em;}
+    h3 {font-size: 2em;}
+    p {font-size: 1em;}
+    a {font-size: 1em;}
+}
+
+@media screen and (min-width:600px) and (max-width: 1000px) {
+     h1 {font-size: 3em;}
+    h2 {font-size: 2em;}
+    h3 {font-size: 1.5em;}
+    p {font-size: 1em;}
+    a {font-size: 1em;}
+}
+
+@media screen and (max-width:600px) {
+    h1 {font-size: 2.5em;}
+    h2 {font-size: 1.5em;}
+    h3 {font-size: 1em;}
+    p {font-size: .8em;}
+    a {font-size: .8em;}
+}
